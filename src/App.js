@@ -9,6 +9,7 @@ import NotFound from './Components/NotFound/NotFound';
 import Footer from './Components/Shared/Footer/Footer';
 import Header from './Components/Shared/Header/Header';
 import AuthProvider from './Context/AuthProvider';
+import PrivateRoute from './Components/Login/PrivateRoute/PrivateRoute';
 
 
 function App() {
@@ -26,12 +27,12 @@ function App() {
             <Route path="/home">
               <Home></Home>
             </Route>
-            <Route path="/details/:doctorId">
+            <PrivateRoute path="/details/:doctorId">
               <DoctorDetails></DoctorDetails>
-            </Route>
-            <Route path="/about">
+            </PrivateRoute>
+            <PrivateRoute path="/about">
               <About></About>
-            </Route>
+            </PrivateRoute>
             <Route path="/login">
               <Login></Login>
             </Route>
