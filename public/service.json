@@ -1,0 +1,56 @@
+[
+    {
+        "id":"1",
+        "name":"Dr. Salimulla",
+        "specialty":"Orthopedic",
+        "img":"https://cdn.pixabay.com/photo/2020/11/03/15/31/doctor-5710152_960_720.jpg",
+        "visit":"1000",
+        "Qualification":"MBBS,MS(Ortho)",
+        "Description":"Doctors, also known as physicians, are licensed health professionals who maintain and restore human health through the practice of medicine."
+    },
+    {
+        "id":"2",
+        "name":"Dr. Sanjida Rahman",
+        "specialty":"Burn & plstic surgery",
+        "img":"https://cdn.pixabay.com/photo/2020/09/22/03/23/doctor-5591782_960_720.jpg",
+        "visit":"1200",
+        "Qualification":"MBBS, FCPS",
+        "Description":"Doctors, also known as physicians, are licensed health professionals who maintain and restore human health through the practice of medicine."
+    },
+    {
+        "id":"3",
+        "name":"Dr. Bappy Haldar",
+        "specialty":"Cardiology",
+        "img":"https://cdn.pixabay.com/photo/2016/02/08/23/36/isolated-1188036_960_720.png",
+        "visit":"1500",
+        "Qualification":"MBBS, MD(Cardiology)",
+        "Description":"Doctors, also known as physicians, are licensed health professionals who maintain and restore human health through the practice of medicine."
+    },
+    {
+        "id":"4",
+        "name":"Dr. Sohas Patowary",
+        "specialty":"General Surgery",
+        "img":"https://cdn.pixabay.com/photo/2020/11/02/19/52/doctor-5707722_960_720.jpg",
+        "visit":"1000",
+        "Qualification":"MBBS, FCPS",
+        "Description":"Doctors, also known as physicians, are licensed health professionals who maintain and restore human health through the practice of medicine."
+    },
+    {
+        "id":"5",
+        "name":"Dr. Nadia Sultana",
+        "specialty":"Oncology Specialist",
+        "img":"https://cdn.pixabay.com/photo/2017/03/14/03/20/woman-2141808_960_720.jpg",
+        "visit":"1300",
+        "Qualification":"MBBS, FACP",
+        "Description":"Doctors, also known as physicians, are licensed health professionals who maintain and restore human health through the practice of medicine."
+    },
+    {
+        "id":"6",
+        "name":"Dr. Tamanna Chowdhury",
+        "specialty":"Nutritionist",
+        "img":"https://cdn.pixabay.com/photo/2017/08/01/23/02/doctor-2568481_960_720.jpg",
+        "visit":"1100",
+        "Qualification":"MBBS, FACP",
+        "Description":"Doctors, also known as physicians, are licensed health professionals who maintain and restore human health through the practice of medicine."
+    }
+]
