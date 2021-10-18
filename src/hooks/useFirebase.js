@@ -49,4 +49,4 @@ const useFirebase = () => {
     }
 
 }
-export default useFirebase
+export default useFirebase;

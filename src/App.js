@@ -8,6 +8,7 @@ import Login from './Components/Login/Login/Login';
 import NotFound from './Components/NotFound/NotFound';
 import Footer from './Components/Shared/Footer/Footer';
 import Header from './Components/Shared/Header/Header';
+import AuthProvider from './Context/AuthProvider';
 
 
 function App() {
@@ -15,30 +16,32 @@ function App() {
     <div className="App">
 
 
-      <Router>
-        <Header></Header>
-        <Switch>
-          <Route exact path="/">
-            <Home></Home>
-          </Route>
-          <Route path="/home">
-            <Home></Home>
-          </Route>
-          <Route path="/details/:doctorId">
-            <DoctorDetails></DoctorDetails>
-          </Route>
-          <Route path="/about">
-            <About></About>
-          </Route>
-          <Route path="/login">
-            <Login></Login>
-          </Route>
-          <Router path="*">
-            <NotFound></NotFound>
-          </Router>
-        </Switch>
-        <Footer></Footer>
-      </Router>
+      <AuthProvider>
+        <Router>
+          <Header></Header>
+          <Switch>
+            <Route exact path="/">
+              <Home></Home>
+            </Route>
+            <Route path="/home">
+              <Home></Home>
+            </Route>
+            <Route path="/details/:doctorId">
+              <DoctorDetails></DoctorDetails>
+            </Route>
+            <Route path="/about">
+              <About></About>
+            </Route>
+            <Route path="/login">
+              <Login></Login>
+            </Route>
+            <Router path="*">
+              <NotFound></NotFound>
+            </Router>
+          </Switch>
+          <Footer></Footer>
+        </Router>
+      </AuthProvider>
 
     </div>
   );
