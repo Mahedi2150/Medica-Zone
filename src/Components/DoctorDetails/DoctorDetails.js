@@ -34,9 +34,6 @@ const DoctorDetails = () => {
             </div>
         </div>
 
-
-
-
     );
 };
 

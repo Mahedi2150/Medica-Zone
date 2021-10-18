@@ -1,6 +1,7 @@
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
+import About from './Components/About/About';
 import DoctorDetails from './Components/DoctorDetails/DoctorDetails';
 import Home from './Components/Home/Home';
 import Login from './Components/Login/Login/Login';
@@ -8,9 +9,12 @@ import NotFound from './Components/NotFound/NotFound';
 import Footer from './Components/Shared/Footer/Footer';
 import Header from './Components/Shared/Header/Header';
 
+
 function App() {
   return (
     <div className="App">
+
+
       <Router>
         <Header></Header>
         <Switch>
@@ -23,6 +27,9 @@ function App() {
           <Route path="/details/:doctorId">
             <DoctorDetails></DoctorDetails>
           </Route>
+          <Route path="/about">
+            <About></About>
+          </Route>
           <Route path="/login">
             <Login></Login>
           </Route>
@@ -32,6 +39,7 @@ function App() {
         </Switch>
         <Footer></Footer>
       </Router>
+
     </div>
   );
 }
