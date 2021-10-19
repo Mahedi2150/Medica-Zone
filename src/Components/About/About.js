@@ -22,7 +22,7 @@ const About = () => {
                                 I died from minerality and became vegetable;
                                 And from vegetativeness I died and became animal.
                                 I died from animality and became man.
-                                Then why fear disappearance through death?
+                                Then why fear disappearance through death? Dr. Sam says. “And that's so important because it impacts the patient as far as their future health outcomes. But it also impacts the practitioner. And I think that's the piece that we've missed.”
                             </Accordion.Body>
                         </Accordion.Item>
 
