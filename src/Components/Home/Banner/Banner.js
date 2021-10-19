@@ -1,46 +1,34 @@
-import React from 'react';
-import { Carousel } from 'react-bootstrap';
+import React from "react";
+import { Button, Col, Row } from "react-bootstrap";
+import "./Banner.css";
 
 const Banner = () => {
     return (
-        <div id="home">
-            <Carousel >
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        style={{ height: "95vh" }}
-                        src="https://images.unsplash.com/photo-1518152006812-edab29b069ac?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80"
-                        alt="First slide"
-                    />
-                    <Carousel.Caption>
+        <div className="containers">
+            <Row className="header-all">
+                <Col xs={12} lg={6}>
+                    <div className="home-description">
+                        <h1 className="title">
+                            What's a good doctor and how do you make one? Doctors should be
+                            good companions for people
+                        </h1>
+                        <p className="p-title">
+                            A good doctor is not one who cures the most because in many specialties recovery is not a frequent outcome. It is not one who makes the best diagnosis because in many cases of self limited or incurable disorders the precise and timely diagnosis does not make a great difference for the patient.
+                        </p>
+                        <Button className="btn-regular p-3">Visit Our Hospital</Button>
+                    </div>
+                </Col>
 
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        style={{ height: "95vh" }}
-                        src="https://images.unsplash.com/photo-1504439468489-c8920d796a29?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80"
-                        alt="Second slide"
-                    />
-
-                    <Carousel.Caption>
-
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        style={{ height: "95vh" }}
-                        src="https://images.unsplash.com/photo-1511174511562-5f7f18b874f8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80"
-                        alt="Third slide"
-                    />
-
-                    <Carousel.Caption>
-
-                    </Carousel.Caption>
-                </Carousel.Item>
-            </Carousel>
+                <Col xs={12} lg={6}>
+                    <div className="home-image">
+                        {/*   <img
+                            src="https://st3.depositphotos.com/9401596/14801/v/600/depositphotos_148016559-stock-illustration-medical-characters-doctors-and-nurses.jpg"
+                            style={{ width: "100%" }}
+                            alt=""
+                        /> */}
+                    </div>
+                </Col>
+            </Row>
         </div>
     );
 };
