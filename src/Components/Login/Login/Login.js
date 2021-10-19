@@ -19,6 +19,7 @@ const Login = () => {
     const history = useHistory()
     const location = useLocation()
     const redirect_url = location.state?.from || '/home'
+
     // google login
     const handleGoogleSignIn = () => {
         signInUsingGoogle()
@@ -69,21 +70,22 @@ const Login = () => {
 
 
     return (
-        <div className="mx-5">
-            <form onSubmit={handleRegistation}>
-                <h3 className="text-primary">
+        <div className="mx-auto w-50  p-5">
+            <form className="" onSubmit={handleRegistation}>
+                <h3 className="text-primary m-5">
                     Please {isLogin ? "Login" : "Register"}
                 </h3>
                 {!isLogin && (
                     <div className="row mb-3">
                         <label htmlFor="inputName" className="col-sm-2 col-form-label">
-                            Name
+
                         </label>
                         <div className="col-sm-10">
                             <input
                                 type="text"
                                 onBlur={handleNameChange}
                                 className="form-control"
+                                placeholder="Enter Name"
                                 id="inputName"
                                 required
                             />
@@ -92,13 +94,14 @@ const Login = () => {
                 )}
                 <div className="row mb-3">
                     <label htmlFor="inputEmail3" className="col-sm-2 col-form-label">
-                        Email
+
                     </label>
                     <div className="col-sm-10">
                         <input
                             type="email"
                             onBlur={handleEmailChange}
                             className="form-control"
+                            placeholder="Enter Email"
                             id="inputEmail3"
                             required
                         />
@@ -106,13 +109,14 @@ const Login = () => {
                 </div>
                 <div className="row mb-3">
                     <label htmlFor="inputPassword3" className="col-sm-2 col-form-label">
-                        Password
+
                     </label>
                     <div className="col-sm-10">
                         <input
                             type="password"
                             onBlur={handlePasswordChange}
                             className="form-control"
+                            placeholder="Enter Password"
                             id="inputPassword3"
                             required
                         />
@@ -121,21 +125,21 @@ const Login = () => {
 
                 <div className="row mb-3">
                     <div className="col-sm-10 offset-sm-2">
-                        <div className="form-check">
+                        <div className="form-check mx-5 px-5">
                             <input
                                 onChange={toggleLogin}
-                                className="form-check-input"
+                                className="form-check-input "
                                 type="checkbox"
                                 id="gridCheck1"
                             />
-                            <label className="form-check-label" htmlFor="gridCheck1">
-                                Already registered
+                            <label className="form-check-label " htmlFor="gridCheck1">
+                                Already registered?
                             </label>
                         </div>
                     </div>
                 </div>
                 <div className="row mb-3 text-danger">{error}</div>
-                <button type="submit" className="btn btn-primary">
+                <button type="submit" className="btn-regular">
                     {isLogin ? "Login" : "Register"}
                 </button>
                 <br />
@@ -143,10 +147,14 @@ const Login = () => {
             </form>
 
             <div>----------------------------</div>
+
             <br />
-            <br />
-            <br />
-            <button onClick={handleGoogleSignIn}>Google sign in</button>
+
+
+            <button onClick={handleGoogleSignIn} type="button" class="btn btn-light">
+                <img src="https://img.icons8.com/color/24/000000/google-logo.png" />
+                google sign in</button>
+
         </div>
     );
 };

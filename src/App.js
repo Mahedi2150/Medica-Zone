@@ -10,6 +10,7 @@ import Footer from './Components/Shared/Footer/Footer';
 import Header from './Components/Shared/Header/Header';
 import AuthProvider from './Context/AuthProvider';
 import PrivateRoute from './Components/Login/PrivateRoute/PrivateRoute';
+import Contact from './Components/Contact/Contact';
 
 
 function App() {
@@ -33,6 +34,9 @@ function App() {
             <PrivateRoute path="/about">
               <About></About>
             </PrivateRoute>
+            <Route path="/contact">
+              <Contact></Contact>
+            </Route>
             <Route path="/login">
               <Login></Login>
             </Route>
